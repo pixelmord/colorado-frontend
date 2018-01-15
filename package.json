@@ -22,10 +22,12 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --parser typescript --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.ts*\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "cypress": "^1.4.1",
+    "gh-pages": "^1.1.0",
     "prettier": "^1.8.2"
   }
 }
